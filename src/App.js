@@ -22,9 +22,12 @@ const imageData = ()=>{
   ]
   return data;
 }
+const data = imageData().map(ele =>(<img key={ele.id} src={ele.img}></img>))
 
 function App() {
+  return <div className="main-div">{data}</div>
   // code here
 }
 
 export default App;
+
